@@ -3,7 +3,7 @@
 > **Disclaimer:** This repo DOES NOT contain production ready code (very limited error handling etc.) and only demonstrates the approach.
 
 This repo demonstrates different options for integrating a custom IoT Agent with [Azure IoT Identity Service](https://azure.github.io/iot-identity-service/).  
-While these samples are written in C# .NET 5, it is definetely possible to implement them using other programming languages. It basically comes down to being able to communicate over Unix domain sockets and potentially doing interop with the native OpenSSL library.  
+While these samples are written in C# .NET 6, it is definetely possible to implement them using other programming languages. It basically comes down to being able to communicate over Unix domain sockets and potentially doing interop with the native OpenSSL library.  
 
 Refer to [this documenation](https://azure.github.io/iot-identity-service/develop-an-agent.html) to understand concepts behind Azure IoT Identity Service.  
 It is also important to understand [different identity types and available authnetication options](https://azure.github.io/iot-identity-service/develop-an-agent.html#connecting-your-agent-to-iot-hub).
@@ -22,7 +22,7 @@ To run these samples, you'll need to follow these steps:
 - [Configure it](https://azure.github.io/iot-identity-service/configuration.html). If you want to use it with an HSM and/or EST, refer to [this repo](https://github.com/arlotito/iot-edge-1.2-tpm/blob/main/step-by-step.md).
 - [Authorize you client application](https://azure.github.io/iot-identity-service/develop-an-agent.html#client-authorization) so it can interact with the services through Unix domain sockets.
 - Clone this repo and go into one of the project folders
-- [Download and install .NET 5](https://dotnet.microsoft.com/download)
+- [Download and install .NET 6](https://dotnet.microsoft.com/download)
 - Excecute ```dotnet run``` if you are the user whom the authorization is configured for OR run e.g. ```sudo -u <username> dotnet run``` if you are not.
 
 ## Module.Identity.Sas
